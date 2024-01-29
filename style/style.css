@@ -1,3 +1,29 @@
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+
+@keyframes headerHover {
+  0% {
+    color: #1b1a1a; }
+  50% {
+    color: #c2c2c2; }
+  100% {
+    background-color: #1b1a1a;
+    color: #c2c2c2; } }
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes scaleItem {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.05); } }
+
 *,
 *::after,
 *::before {
@@ -9,7 +35,10 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #1b1a1a;
+  background-color: #c2c2c2;
+  font-weight: 500; }
 
 header {
   display: flex;
@@ -23,9 +52,60 @@ header {
 .header__list {
   display: flex;
   min-width: 400px;
-  list-style: none; }
+  list-style: none;
+  animation: fadeUp 1s ease-in forwards; }
   .header__list__item {
     font-size: 2rem;
-    margin: 2vh 2vw;
+    margin: 3vh 1vw;
+    padding: 1vh 1vw;
+    border-radius: 25rem;
     font-weight: 500;
     text-transform: uppercase; }
+    .header__list__item:hover {
+      animation: headerHover .5s ease-in forwards; }
+
+.section-hero {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2b659e;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  color: #c2c2c2; }
+
+.textCont {
+  width: 80%;
+  margin: 10vh 5vw 2vh 5vw;
+  justify-content: center; }
+  .textCont__title {
+    font-size: 6rem;
+    font-weight: 600; }
+  .textCont__main {
+    font-size: 2rem;
+    margin: 4vh 0 0 0;
+    width: 70%; }
+  .textCont__nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10vh 0; }
+    .textCont__nav__item {
+      color: #1b1a1a;
+      background-color: #caad2b;
+      font-size: 3rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 2vh 2vw;
+      border-radius: 25px; }
+      .textCont__nav__item:hover {
+        animation: scaleItem .3s ease-in forwards; }
+
+.spanText {
+  color: #caad2b; }
+
+.heroImage {
+  height: 100%;
+  width: 80%;
+  object-fit: cover;
+  float: right; }
+
+.heroIcon {
+  font-size: 10rem; }

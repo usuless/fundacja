@@ -1,0 +1,60 @@
+.section-hero {
+    display:flex;
+    justify-content: space-between;
+    background-color: $color-header;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    color:$color-white;
+}
+
+.textCont {
+    width:80%;
+    margin:10vh 5vw 2vh 5vw;
+    justify-content: center;
+
+    &__title {
+        font-size:6rem;
+        font-weight: 600;
+    }
+
+    &__main {
+        font-size: 2rem;
+        margin:4vh 0 0 0;
+        width:70%;
+    }
+
+    &__nav {
+        display:flex;
+        justify-content: space-between;
+        margin:10vh 0;
+
+        &__item {
+            color:$color-dark;
+            background-color: $color-secoundary;
+            font-size:3rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding:2vh 2vw;
+            border-radius: 25px;
+
+            &:hover {
+                animation: scaleItem .3s ease-in forwards;
+            }
+        }
+    }
+}
+
+.spanText {
+    color:$color-secoundary;
+}
+
+.heroImage {
+    height: 100%;
+    width:80%;
+    object-fit: cover;
+    float:right;
+}
+
+.heroIcon {
+    font-size:10rem;
+}

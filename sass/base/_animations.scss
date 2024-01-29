@@ -1,0 +1,36 @@
+@keyframes headerHover {
+    0% {
+        color:$color-dark;
+    }
+
+    50% {
+        color:$color-white;
+    }
+
+    100% {
+        background-color: $color-dark;
+        color:$color-white;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleItem {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
