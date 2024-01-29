@@ -1,9 +1,17 @@
-.section-hero {
-    display:flex;
-    justify-content: space-between;
-    background-color: $color-header;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-    color:$color-white;
+.section {
+
+    &__hero {
+        display:flex;
+        justify-content: space-between;
+        background-color: $color-header;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        color:$color-white;
+    }
+    
+    &__mission {
+        width:70%;
+        margin:5vh auto;
+    }
 }
 
 .textCont {
@@ -26,6 +34,7 @@
         display:flex;
         justify-content: space-between;
         margin:10vh 0;
+        animation: fadeUp 3s;
 
         &__item {
             color:$color-dark;
@@ -34,11 +43,20 @@
             display: flex;
             flex-direction: column;
             text-align: center;
+            align-items: center;
             padding:2vh 2vw;
             border-radius: 25px;
 
             &:hover {
                 animation: scaleItem .3s ease-in forwards;
+            }
+
+            &__text {
+                margin: auto 0;
+            }
+
+            &__icon {
+
             }
         }
     }
@@ -57,4 +75,24 @@
 
 .heroIcon {
     font-size:10rem;
+}
+
+.section__mission {
+    
+    &__title {
+        font-size:6rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    &__paragraph {
+        font-size:2.6rem;
+        margin:8vh auto;
+        width:80%;
+    }
+}
+
+.doggo {
+    text-align: center;
 }
