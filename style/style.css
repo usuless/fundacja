@@ -88,23 +88,27 @@ header {
     width: 70%; }
   .textCont__nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 10vh 0;
-    animation: fadeUp 3s; }
+    animation: fadeUp 3s;
+    width: 80%; }
     .textCont__nav__item {
       color: #1b1a1a;
       background-color: #caad2b;
-      font-size: 3rem;
+      font-size: 2rem;
       display: flex;
       flex-direction: column;
       text-align: center;
       align-items: center;
-      padding: 2vh 2vw;
-      border-radius: 25px; }
+      padding: 2vh 1vw;
+      border-radius: 5px; }
       .textCont__nav__item:hover {
         animation: scaleItem .3s ease-in forwards; }
       .textCont__nav__item__text {
         margin: auto 0; }
+
+.heroIcon {
+  font-size: 5rem; }
 
 .spanText {
   color: #caad2b; }
@@ -114,9 +118,6 @@ header {
   width: 80%;
   object-fit: cover;
   float: right; }
-
-.heroIcon {
-  font-size: 10rem; }
 
 .section__mission__title {
   font-size: 6rem;
@@ -128,6 +129,3 @@ header {
   font-size: 2.6rem;
   margin: 8vh auto;
   width: 80%; }
-
-.doggo {
-  text-align: center; }
